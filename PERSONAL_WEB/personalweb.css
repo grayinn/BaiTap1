@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
+*{
+    font-family: 'Baloo 2', cursive;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+:root{
+    --black: #517F6F;
+    --while: #fff;
+    --blue: #C0DEBC;
+    --pink: #FEE2CA;
+    --yellow: #ffd080;
+    --border: .2rem solid:var(--black);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;   
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--while);
+    /* background: rgba(0,0,0,0.4); */
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+    border-radius: 5rem;
+}
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    background: rgba(255, 255, 255, 0.836);
+    background: transparent ;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    padding: 0.8rem 15%;
+}
+
+.header .logo img{
+    height: 7.5rem;
+}
+
+.header .navbar a{
+    margin: 0 1.5rem;
+    font-size: 2.1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color:#CD5659;
+    border-bottom: 1rem solid var(--while);
+    padding-bottom: .5rem;
+}
+
+.home{
+    min-height: 86.9vh;
+    display: flex;
+    align-items: center;
+    background: url(./imgg/background\ \(1\).gif) no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 100rem;
+    position: relative;
+    left: 240px;
+    top: 30px;
+}
+
+.home .content h3{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--black);
+    line-height: 11rem;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    /* padding: 1.5rem 0; */
+    color: var(--blue);
+}
+
+.container{
+    left: 20rem;
+    right: auto;
+    height: 50rem;
+    width: 25rem;
+    transition: none;
+}
+

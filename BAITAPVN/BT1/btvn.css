@@ -1,0 +1,38 @@
+
+.flexbox-container {
+    display: grid;
+    padding: 30px;
+    background-color: rgb(216, 217, 255);
+    width: 90%;
+    height: 70vh;
+    column-gap: 10px;
+    row-gap: 13px;
+
+}
+
+.flexbox-item {
+    width: 200px;
+}
+
+.flexbox-item-1 {
+    min-height: 90px;
+    background-color: rgb(205, 36, 87);
+}
+
+.flexbox-item-2 {
+    min-height: 250px;
+    background-color: rgb(216, 100, 11);
+}
+
+.cai-so-2{
+    display: grid;
+}
+
+.cai-nam-tren{
+    display: flex;
+}
+
+.o-dau-tien{
+    min-height: 90px;
+    background-color: rgb(19, 152, 141);
+}

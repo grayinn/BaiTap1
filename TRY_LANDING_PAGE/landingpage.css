@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+/* font-family: 'Noto Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+/* font-family: 'Song Myung', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+/* font-family: 'Red Hat Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap');
+/* font-family: 'EB Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+
+
+*{
+    padding: 0px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+/* NAVBAR START */
+nav{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 133px;    /* hàng thanh ngang trên */
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+}
+
+.logo{
+    position: absolute;
+    width: 395.83px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    padding-top: 52.54px;
+    padding-left: 63.58px;
+}
+
+nav ul{
+    float: right;
+    padding-right: 61px;
+    padding-top: 59px;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 31px;
+    line-height: 34px;
+}
+
+nav a{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav li:hover{
+    box-shadow: 0 2px rgb(0, 0, 0);
+    padding-bottom: 39px;
+}
+
+nav #icon{
+    color: black;
+    font-size: 40px;
+    line-height: 143px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* @media (max-width: 1010px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 10px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+} */
+/* @media screen and (max-width: 376px){
+    .body_main{
+        display: block;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+} */
+
+
+@media (max-width: 1000px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+}
+    /* nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    } */
+    /* nav a{
+        font-size: 20px;
+    } */
+    /* a.active,a:hover{
+        border: none;
+        color: aquamarine;
+    } 
+
+}
+
+/* NAVBAR END */
+
+
+
+
+
+/* BODY START */
+.body_main {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-top: 210px;
+}
+
+.body_main .body1 h1{
+    font-size: 54px;
+    width: 858px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 44px;
+    font-family: 'Song Myung', serif;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.body_main .body1 h2{
+    font-size: 20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    text-align: center;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+/* Thanh gạch ngang */
+.hrr{
+    margin: 0 auto;
+}
+
+/* BODY END */
+
+
+
+
+
+
+
+
+/* ALL ARTICLES STAR */
+.img-header{
+    width: 225px;
+    height: 53px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    margin: 64px auto 39px auto;
+    font-family: 'Song Myung', serif;
+}
+
+.img-body{
+    width:640px;
+    min-height: 200px;
+    margin: 0px auto 120px auto;
+}
+
+
+.img-body2{
+    width:640px;
+    min-height: 200px;
+    margin: 0px auto 120px auto;
+    padding-bottom: 139px;
+}
+.body-img {
+    margin-left: -14px;
+    margin-right: -14px;
+    display: flex;
+    justify-content: center
+}
+.body-img .body-img-page{
+    float: left;
+    width: 304px;
+    height: 176px;
+    padding: 0 14px;
+    
+}
+
+.body-img .body-img-page .body-img-caption{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26.4px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ALL ARTICLES ENDS */
+
+
+
+
+
+/* FOOTERS START */
+
+.footer{
+    background: rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 464px;
+}
+
+.footer .hangtren{
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .hangtren p{
+    letter-spacing: 2.5px;
+    word-wrap: normal;
+}
+
+strong { 
+    font-weight: 800;
+}
+
+.footer .imgd{
+    padding-top: 105.12px;
+}
+
+.footer .contentt{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+
+    width: 488px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25.58px;
+    font-weight: lighter;
+    font-family: 'EB Garamond', serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 32px;
+}
+
+.footer .links a{
+    padding-bottom: 61px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 0%;
+    text-decoration: underline;
+
+}
+
+.footer .cre{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+/* FOOTER ENDS */
+
+

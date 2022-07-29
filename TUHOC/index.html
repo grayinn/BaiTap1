@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- 
+    1. h1 - h6 - heading
+    2. p - paragraph
+    3. img
+    4. a - anchor
+    5. ul, li - hiển thị dạng danh sách - unordered list, list item
+    6. table
+    7. input
+    8. button
+    9. div
+ -->
+<html>
+    <!-- Phần đầu -->
+    <head>
+        <title>Nguyen Hong Nhung</title>
+        <meta charset="utf-8">
+        <!-- Link tới CSS -->
+        <link rel="stylesheet" href="main.css">
+    <!-- CSS cách 1 Internal -->
+        <!-- <style>
+            h1{
+                color: darkorange;
+                font-size: 40px;
+            }
+        </style>
+        <style>
+            img{
+                height: 215px;
+            }
+        </style> -->
+    </head>
+
+    <!-- Phần thân -->
+    <body>
+        <!-- 1. Heading h1 to tiêu đề -->
+        <h1>Phát hiện cô gái Nguyen Hong Nhung học bài nhưng mãi chẳng hiểu bài !!! </h1> 
+        <!-- 2. Thẻ đoạn văn p -->
+        <p>Những ngày vừa qua, cô ấy không chịu làm và xem bài trước, đến cận ngày deadline cổ mới mở slide ra xem dẫn đến không thể lên Youtubr tìm hiểu kỹ càng, cuối cùng sau một tiết học, cô ấy dường như sắp sửa mất gốc. Nhưng may thay, cả lớp cô ấy cũng chẳng có ai hiểu được hết cả bài, Hong Nhung cảm thấy rất vui vì điều này. Hôm nay cô ấy sẽ lên youtube và coi lại thật kỹ SQL để có thể hiểu bài và làm được bài tập. Cô ấy quyết tâm phải được A môn này.!!!!!</p>
+        <!-- 3. Thẻ hình ảnh img -->
+        <img src="https://i.pinimg.com/564x/28/a2/a1/28a2a1a063787990401e660943419d41.jpg"><br>
+        <!-- 4. Thẻ liên kết a mỏ neo -->
+        <a href="https://www.facebook.com/hskingg">Tới trang cá nhân của cô ta nào</a>
+        <!-- 5. Thẻ danh sách -->
+        <ul>
+            <li>Tại sao quả đất</li>
+            <li>Lại có màu xanh</li>
+            <li>Tại sao quả chanh</li>
+            <li>Lại chua xin xít</li>
+        </ul>
+        <!-- 6. Thẻ tạo bảng table -->
+        <table>
+            <thead>
+                <th>STT</th>
+                <th>Đặc tính</th>
+                <th>Số điểm</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ham ăn</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nói nhiều</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 7. Thẻ input -->
+        <input type="text">
+        <input type="button">
+        <input type="checkbox">
+        <!-- radio chỉ chọn 1 cái thôi -->
+        <input type="radio">
+        <!-- 8. Thẻ button -->
+        <button>ĐĂNG KÝ NGAY</button>
+        <!-- 9. Thẻ div - tạo khối bao quanh phtu khac -->
+        <!-- 10. Thuộc tính attribute -->
+        <h1 title="Trời ơi là trời">attribute</h1>
+    </body>
+    <!-- 11. CSS trong HTML như nào? -->
+    <body>
+        <div>
+            <h2>CSS in HTML ? ? ?</h2>
+            <ol>
+                <li>Internal - Viết vào bên trong ở phần head</li>
+                <li>External - Viết ra một file CSS riêng</li>
+                <li>Inline - Viết ngay trong cái hàng line</li>
+            </ol>
+        </div>
+    <!-- CSS Selectors - ID và Class -->
+        <div>
+            <!-- ID -->
+            <h3 id="doan1">Sự thật thì luôn luôn đơn giản</h3>
+            <h3 id="doan2">Nhưng people make it complicated</h3>
+            <!-- CLASS -->
+            <h2 class="doan3">Thế nên</h2>
+            <h3 class="doan3">Mình phải enjoy cái moment này !!</h3>
+        </div>
+        <p style="color: red; font-size: 25px;">
+            Đơn vị trong CSS
+            <div id="doan1">
+            1. Absolute units
+            <ul>
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+            </ul>
+            2. Relative
+            <ul>
+                <li>% - thường use để chia layout</li>
+                <li>rem - toàn bỏ thẻ html - xem bài đơn vị trong CSS </li>
+                <li>em - gần nhất</li>
+                <li>vw - chiều ngang viewport</li>
+                <li>vh - chiều dọc viewport</li>
+            </ul>
+            </div>
+        </p>
+        <!-- Tạo cái box -->
+        <div class="box"></div>
+        <style>
+            .box {
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            /* Xếp box chung 1 hàng ? */
+                float: left;
+            }
+            .box1 {
+                background-color: #333;
+                /* trên dưới, trái phải
+                trên, trái phải, dưới
+                trên, phải, dưới, trái
+                theo chiều kim đồng hồ */
+                padding: 10px 12px 8px 6px;
+            }
+            .box2 {
+                background-color: orange;
+                margin-left: 20px;
+            }
+            .box3 {
+                background-color: firebrick;
+                padding-top: 10px;
+                padding-right: 10px;
+    /* PHẦN BORDER */
+                border-width: 8px;
+                border-top-width: 50px;
+                border-left-width: 10px;
+                border-right-width: 80px;
+                border-bottom-width: 10px;
+            /* solid có viền sẵn mặc định 2px */
+                border-style: solid; 
+            /* dấu chấm viền - nét đứng dot */
+                border-color: darkslategray;
+            /* viết border ngắn hơn */
+                border: 40px solid #333;
+            /* Viêt border ngắn hơn - mà một phía */
+                border-top: 50px solid #333;
+            }
+            .box4 {
+                background-color: rgb(10, 53, 53);
+                margin-top: 10px;
+            /* Margin ko làm dày lên như border, không bao bọc - chỉ đẩy ra */
+                margin-left: 40px;
+                padding: 25px 20px 10px 15px;
+            /* viết tắt margin */
+                /* đẩy ra 4 hướng 10px */
+                /* trên dưới, trái phải - như cái padding */
+                margin: 10px;
+            }
+            .box5 {
+                width: 150px;
+                height: 100px;
+                color: #fff;
+                background-color: brown;
+                padding: 15px;
+                border: 2px solid #333;
+                /* căn giữa mà ko cần điều chỉnh nhiều lần */
+                box-sizing: border-box;
+            }
+            .box {
+                /* hủy đi cái box bên trên - sửa web đã code */
+                box-sizing: unset;
+            }
+    /* CSS BACKGROUND CLIP */
+            .header {
+                width: 100%;
+                height: 400px;
+                background-color: tomato;
+                padding: 30px;
+                box-sizing: border-box;
+                border: 10px dashed rgb(70, 196, 54);
+            /* background clip, đổ từ ranh giới nào - mặc định là BODER BOX */
+                background-clip: border-box;
+                /* background-clip: padding-box; */
+                /* background-clip: content-box; */
+
+            /* background image */
+                /* match màu */
+                background-image: linear-gradient(90deg, rgba(255, 255, 0, 0.5), rgba(60, 60, 167, 0.5), #ccc),
+                url(https://cdn.pixabay.com/photo/2013/07/13/01/10/pentagram-155244_960_720.png), 
+                url(https://dothobattrang.vn/wp-content/uploads/2018/05/con-meo-hoang-vao-nha-la-diem-bao-gi-hen.jpg);
+                background-size: 50px, 40px, 50px;
+                /* contain ngc lại vs cover */
+                background-size: contain;
+                /* không chấp nhận thành phần ảnh thiếu bị trắng */
+                background-size: cover;
+                background-repeat: no-repeat; 
+                border: 20px dashed #ccc;
+                padding: 20px;
+                box-sizing: border-box;
+                /* quy đình hình ảnh được đổ từ chỗ mô vào */
+                background-origin: content-box;
+                /* Vị trí hình ảnh */
+                background-position: center;
+                background-position: top 20px right 20px ;
+                /* viết gộp */
+            }
+        </style>
+        <body>
+            <div class="box box1">Mở hộp quà 1</div>
+            <div class="box box2">Mở hộp wa 2</div>
+            <div class="box box3">Box 3</div>
+            <div class="box box4">Box 4 vd margin</div>
+            <div class="box box5">Đây là nội dung bài viết !</div>
+            <div class="header"></div>
+    <!-- PHẦN MARGIN NGOÀI CÙNG BOX4 -->
+        </body>
+</html>

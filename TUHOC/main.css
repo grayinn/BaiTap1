@@ -1,0 +1,57 @@
+/* MỨC ĐỘ ƯU TIÊN TRONG CSS
+0. Important vô số điểm
+1. Internal, External - gọi sau được ưu tiên
+2. Inline - 1000 đ
+3. #id - 100
+4. .class - 10
+5. tag name - 1
+6. Equal specificity?
+7. Universal selector and inherited? - 0đ */
+
+/* Cách Exxternal */
+h1{
+    color: darkorange;
+    font-size: 40px;
+}
+img{
+    height: 215px;
+}
+/* ID */
+#doan1 {
+    color: blueviolet;
+}
+#doan2 {
+    color: limegreen;    
+}
+/* CLASS */
+.doan3 {
+    color: teal;
+}
+/* Ưu tiên nhất */
+li {
+    color: green !important;
+}
+
+/* CSS Variable - mất một lần sửa ở đây thôi - đồng bộ màu trong web */
+/* global */
+:root{
+    --đổi-màu: rgb(194, 104, 52);
+}
+h1 {
+    color: var(--đổi-màu);
+}
+.doan3 {
+    /* local */
+    --mycolor: rgba(20, 85, 39, 0.986);
+    color: var(--mycolor);
+}
+/* ĐƠN VỊ TRONG CSS */
+.doan4 {
+    color: red;
+    font-size: 25px;
+}
+#boxsizing {
+    width: 100px;
+    height: 100px;
+    color: darkorchid;
+}
